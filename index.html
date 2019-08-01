@@ -1,16 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello, Sasha!</h1>
-  <ul id="files">
+<html>
 
-  </ul>
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+
+	<div class="mainContainer">
+
+		<div class="outputContainer">
+			<div id="handModeOutput" class="select">
+				<div class="live" style="margin-top: 40px;">   <div id="files">
+
+				</div></div>
+				<div class="live"></div>
+				<div class="live"></div>
+				<div class="live"></div>
+				<div class="live"></div>
+				<div class="live"></div>
+				<div class="live" style="margin-bottom: 40px;"></div>
+			</div>
+			<div id="autoModeOutput">
+				<div class="table"></div>
+			</div>
+		</div>
+
+		<div class="inputContainer">
+
+			<div class="tabsContainer">
+				<div id="handModeTab">
+					ручной режим
+				</div>
+				<div id="autoModeTab">
+					автоматический режим
+				</div>
+			</div>
+			<div id="tabSelectLine"></div>
+
+			<div class="tabsContent">
+				<div id="handModeInput" class="select">
+
+					<div id="mainButton">
+						<div id="buttonText">выберете модель</div>
+						<div id="buttonPointer">
+							<svg viewBox="0 0 100 100" width="10" height="10" class="svgOpen">
+								<path
+									d="M 45 50 L 5 10 C 0 5 5 0 10 5 L 50 45 Q 55 50 50 55 L 10 95 C 5 100 0 95 5 90 Z"
+									fill="#424242" />
+							</svg>
+							<svg viewBox="0 0 100 100" width="10" height="10" class="svgClose">
+								<path
+									d="M 45 50 L 5 10 C 0 5 5 0 10 5 L 50 45 L 90 5 C 95 0 100 5 95 10 L 55 50 L 95 90 C 100 95 95 100 90 95 L 50 55 L 10 95 C 5 100 0 95 5 90 Z"
+									fill="#424242" />
+							</svg>
+						</div>
+					</div>
+
+					<div id="modelSelectContainer">
+
+						<div class="modelList">
+							<div id="model1">Привод постоянного тока</div>
+							<div id="model2">Привод переменного тока</div>
+						</div>
+					</div>
+
+					<div class="switchContainer">
+
+						<div class="button" id="buttonPC">+ управление</div>
+						<div class="button" id="buttonMC">- управление</div>
+
+					</div>
+					<div class="indicatorContainer">
+
+						<div class="indicator">+ контроль
+							<div class="light" id="indicatorPC"></div>
+						</div>
+
+						<div class="indicator">- контроль
+							<div class="light" id="indicatorMC"></div>
+						</div>
+
+					</div>
+
+					<div class="rangeContainer">
+						<div class="rangeTxt">Нагрузка на шибер</div>
+						<input type="range" min="0" max="14" step="1" value="0" id="rangeInput">
+						<div id="levels">
+							<span class="value">0</span>
+							<span>1</span>
+							<span>2</span>
+							<span>3</span>
+							<span>4</span>
+							<span>5</span>
+							<span>6</span>
+							<span>7</span>
+							<span>8</span>
+							<span>9</span>
+							<span>10</span>
+							<span>11</span>
+							<span>12</span>
+							<span>13</span>
+							<span>14</span>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div id="autoModeInput">
+
+
+					<div id="mainButton_2">
+						<div id="buttonText_2">выберете модель</div>
+						<div id="buttonPointer_2">
+							<svg viewBox="0 0 100 100" width="10" height="10" class="svgOpen">
+								<path
+									d="M 45 50 L 5 10 C 0 5 5 0 10 5 L 50 45 Q 55 50 50 55 L 10 95 C 5 100 0 95 5 90 Z"
+									fill="#424242" />
+							</svg>
+							<svg viewBox="0 0 100 100" width="10" height="10" class="svgClose">
+								<path
+									d="M 45 50 L 5 10 C 0 5 5 0 10 5 L 50 45 L 90 5 C 95 0 100 5 95 10 L 55 50 L 95 90 C 100 95 95 100 90 95 L 50 55 L 10 95 C 5 100 0 95 5 90 Z"
+									fill="#424242" />
+							</svg>
+						</div>
+					</div>
+
+					<div id="modelSelectContainer_2">
+
+						<div class="modelList_2">
+							<div id="model1_2">модель 1</div>
+							<div id="model2_2">модель 2</div>
+							<div id="model3_2">модель 3</div>
+							<div id="model4_2">модель 4</div>
+						</div>
+					</div>
+
+
+					<div id="mainButton_p">
+						<div id="buttonText_p">выберете программу</div>
+						<div id="buttonPointer_p">
+							<svg viewBox="0 0 100 100" width="10" height="10" class="svgOpen">
+								<path
+									d="M 45 50 L 5 10 C 0 5 5 0 10 5 L 50 45 Q 55 50 50 55 L 10 95 C 5 100 0 95 5 90 Z"
+									fill="#424242" />
+							</svg>
+							<svg viewBox="0 0 100 100" width="10" height="10" class="svgClose">
+								<path
+									d="M 45 50 L 5 10 C 0 5 5 0 10 5 L 50 45 L 90 5 C 95 0 100 5 95 10 L 55 50 L 95 90 C 100 95 95 100 90 95 L 50 55 L 10 95 C 5 100 0 95 5 90 Z"
+									fill="#424242" />
+							</svg>
+						</div>
+					</div>
+
+					<div id="programSelectContainer">
+
+						<div class="programList">
+							<div id="program1">программа 1</div>
+							<div id="program2">программа 2</div>
+							<div id="program3">программа 3</div>
+							<div id="program4">программа 4</div>
+						</div>
+					</div>
+
+					<div class="buttonsContainer">
+						<div class="runButton">запуск</div>
+						<div class="printButton">печать результатов</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/selectMode.js"></script>
+	<script src="js/selectModel.js"></script>
+	<script src="js/selectModel_2.js"></script>
+	<script src="js/selectProgram.js"></script>
+	<script src="js/rangeInput.js"></script>
   <script src="./renderer.js"></script>
 </body>
 </html>

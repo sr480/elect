@@ -1,0 +1,33 @@
+
+@keyframes open{
+	0%{
+		clip-path: circle(0% at 50% 60px);
+	}
+	100%{
+		clip-path: circle(200% at 50% 60px);
+	}
+}
+@keyframes close{
+	0%{
+		clip-path: circle(200% at 50% 60px);
+	}
+	100%{
+		clip-path: circle(0% at 50% 60px);
+	}
+}
+@keyframes open_p{
+	0%{
+		clip-path: circle(0% at 50% 140px);
+	}
+	100%{
+		clip-path: circle(200% at 50% 140px);
+	}
+}
+@keyframes close_p{
+	0%{
+		clip-path: circle(200% at 50% 140px);
+	}
+	100%{
+		clip-path: circle(0% at 50% 140px);
+	}
+}

@@ -4,12 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-rebuild"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^6.0.0",
     "serialport": "^7.1.5"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.5"
   }
 }
